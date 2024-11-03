@@ -10,11 +10,11 @@ from dash import Dash, dcc, html, Input, Output
 from openai import OpenAI
 
 # Load the datasets
-chicago_df = pd.read_csv('~/desktop/Project_7/Chicago.csv')
-los_angeles_df = pd.read_csv('~/desktop/Project_7/Los Angeles.csv')
-new_york_df = pd.read_csv('~/desktop/Project_7/New York.csv')
-san_francisco_df = pd.read_csv('~/desktop/Project_7/San Francisco.csv')
-san_diego_df = pd.read_csv('~/desktop/Project_7/San Diego.csv')
+chicago_df = pd.read_csv('Chicago.csv')
+los_angeles_df = pd.read_csv('Los Angeles.csv')
+new_york_df = pd.read_csv('New York.csv')
+san_francisco_df = pd.read_csv('San Francisco.csv')
+san_diego_df = pd.read_csv('San Diego.csv')
 
 # Combine datasets into one DataFrame with an additional 'city' column
 chicago_df['city'] = 'Chicago'
